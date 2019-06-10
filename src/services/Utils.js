@@ -43,7 +43,7 @@ export default class Utils {
                     then();
                 }
             }
-            xmlHttp.open("GET", './nations.json', true); // true for asynchronous 
+            xmlHttp.open("GET", './nations.js', true); // true for asynchronous 
             xmlHttp.send(null);
         }
         else{

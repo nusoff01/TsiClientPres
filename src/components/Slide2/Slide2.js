@@ -21,7 +21,7 @@ class Slide2 extends React.Component {
           <h3>About me</h3>
           <ul>
             <li>Wrote hacky JavaScript the last 6 years</li>
-            <li>Tried incubating a bunch of bad ideas at Microsoft</li>
+            <li>Tried incubating a bunch of different ideas at Microsoft</li>
             <li>One idea (Time Series Insights) is sort of working!</li>
           </ul>
           <h3>What else?</h3>

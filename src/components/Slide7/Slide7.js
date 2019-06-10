@@ -4,7 +4,7 @@ import Utils from '../../services/Utils';
 
 class Slide7 extends React.Component {
   now = new Date();
-  interval;
+  interval; timeout;
   renderCount = 0;
 
   constructor(props) {
@@ -47,15 +47,16 @@ class Slide7 extends React.Component {
               chart = new Utils.tsiClient.ux.LineChart(c1);          
               break;
           }
-          chart.render(Utils.data, {tooltip: true, xAxisTimeFormat: () => 'YYYY', isTemporal: false, spMeasures: ['Income', 'LifeExpectancy', 'Population']});
+          chart.render(Utils.data, {scaledToCurrentTime: true, tooltip: true, xAxisTimeFormat: () => 'YYYY', isTemporal: false, spMeasures: ['Income', 'LifeExpectancy', 'Population']});
           this.renderCount++;
         }
-        setTimeout(render, 1000);
+        this.timeout = setTimeout(render, 1000);
         this.interval = setInterval(render, 3000)
     });
   }
 
   componentWillUnmount() {
+    clearTimeout(this.timeout);
     clearInterval(this.interval);
   }
 

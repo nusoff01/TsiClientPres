@@ -4,7 +4,7 @@ import Utils from '../../services/Utils';
 
 class Slide6 extends React.Component {
   now = new Date();
-  interval;
+  interval; timeout;
 
   constructor(props) {
     super(props);
@@ -22,12 +22,13 @@ class Slide6 extends React.Component {
           }
           lineChart.render(this.randomData(), {legend: 'compact'});
         }
-        setTimeout(render, 1000);
+        this.timeout = setTimeout(render, 1000);
         this.interval = setInterval(render, 3000)
     });
   }
 
   componentWillUnmount() {
+    clearTimeout(this.timeout);
     clearInterval(this.interval);
   }
 

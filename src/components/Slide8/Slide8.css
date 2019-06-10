@@ -1,0 +1,10 @@
+.pics{
+    display: flex;
+    height: 70%;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+img{
+    height: 100%;
+}

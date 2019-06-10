@@ -7,9 +7,10 @@ import Slide4 from './components/Slide4/Slide4'
 import Slide5 from './components/Slide5/Slide5'
 import Slide6 from './components/Slide6/Slide6'
 import Slide7 from './components/Slide7/Slide7'
+import Slide8 from './components/Slide8/Slide8'
 
 class App extends React.Component {
-  MAX_SLIDES = 7;
+  MAX_SLIDES = 8;
   constructor(props) {
     super(props);
     this.state = {slide: 1, direction: 'right'};
@@ -62,6 +63,8 @@ class App extends React.Component {
         return <Slide7 className={`from${this.state.direction}`}></Slide7>;    
       case 7:
         return <Slide6 className={`from${this.state.direction}`}></Slide6>;    
+      case 8:
+          return <Slide8 className={`from${this.state.direction}`}></Slide8>;    
       default:
         return '';
     }
