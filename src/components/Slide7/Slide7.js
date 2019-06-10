@@ -15,7 +15,7 @@ class Slide7 extends React.Component {
   componentDidMount() {
     var pr = window.PR;
     pr.prettyPrint();
-    setTimeout(() => {
+    var then = () => setTimeout(() => {
         var render = () => {
           var cc1 = document.getElementById('chartCard1');
           if(cc1){
@@ -53,6 +53,7 @@ class Slide7 extends React.Component {
         this.timeout = setTimeout(render, 1000);
         this.interval = setInterval(render, 3000)
     });
+    Utils.initData(then); 
   }
 
   componentWillUnmount() {

@@ -23,7 +23,7 @@
 }
 
 .chart{
-    height: calc(100% - 41px);
+    height: calc(100% - 40px);
     width: 100%;
     background: #0D0F0E;
 }

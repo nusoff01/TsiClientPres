@@ -13,7 +13,7 @@ class App extends React.Component {
   MAX_SLIDES = 8;
   constructor(props) {
     super(props);
-    this.state = {slide: 1, direction: 'right'};
+    this.state = {slide: (window.location.hash ? Number(window.location.hash.substring(1)) : 1), direction: 'right'};
     window.addEventListener('keyup', event => {
       if(event.which === 37 && this.state.slide > 1){
         this.changeSlide(false);
@@ -26,6 +26,7 @@ class App extends React.Component {
 
   changeSlide(increment = true){
     this.setState({slide: this.state.slide + (increment ? 1 : -1), direction: increment ? 'right' : 'left'});
+    window.location.hash = this.state.slide;
   }
 
   componentDidMount() {

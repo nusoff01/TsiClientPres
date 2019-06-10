@@ -31,8 +31,16 @@ class Slide2 extends React.Component {
           </ul>
           <h3>Why I'm here?</h3>
           <ul>
-            <li>To discuss a JSON shape for visualization, and a few cool results</li>
+            <li>To discuss a JSON shape for visualization, and a couple cool results</li>
           </ul>
+        </div>
+        <div className="hs">
+          <img alt="" src="./headshot.PNG"></img>
+          <div className="cap">Me</div>
+        </div>
+        <div className="hs hs2">
+          <img alt="" src="./bitmoji.PNG"></img>
+          <div className="cap">Also Me</div>
         </div>
       </div>
     );

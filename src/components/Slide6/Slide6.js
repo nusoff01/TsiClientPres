@@ -12,7 +12,7 @@ class Slide6 extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
+    var then = () => setTimeout(() => {
         var c1 = document.getElementById('chart1');
         var lineChart = new Utils.tsiClient.ux.LineChart(c1);
         var render = () => {
@@ -25,6 +25,7 @@ class Slide6 extends React.Component {
         this.timeout = setTimeout(render, 1000);
         this.interval = setInterval(render, 3000)
     });
+    Utils.initData(then);
   }
 
   componentWillUnmount() {
