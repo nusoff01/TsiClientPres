@@ -1,0 +1,33 @@
+table{
+    text-align: left;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 1.2vw .8vw;
+    border: 1px solid #666;
+}
+
+.slide4{
+    font-size: 1.3vw;
+}
+
+.s4left{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.s4right{
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.slide4 h1{
+    margin-bottom: 3vw;
+}
+
+pre{
+    background: #0D0F0E !important;
+    padding: 20px !important;
+}

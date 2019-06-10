@@ -1,0 +1,19 @@
+.slide2 .content{
+    padding-left: 80px;
+}
+
+.content ul li{
+    padding: 8px;
+}
+
+.slide2 h3{
+    padding-top: 20px;
+}
+
+.slide2{
+    font-size: 1.6vw;
+}
+
+a{
+    color: white !important;
+}

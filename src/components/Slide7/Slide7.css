@@ -1,0 +1,10 @@
+.slide7 .chartCard{
+    height: calc(100% - 280px);
+    margin-top: 40px;
+}
+
+.slide7 pre{
+    background-color: transparent !important;
+    border: none;
+    padding: 0 !important;
+}

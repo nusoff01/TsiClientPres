@@ -1,0 +1,33 @@
+.slide3{
+}
+
+.chartCard{
+    height: calc(100% - 220px);
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    transition: opacity .4s ease;
+}
+
+.ccTitle{
+    height: 40px;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background: #0D0F0E;
+}
+
+.chart{
+    height: calc(100% - 41px);
+    width: 100%;
+    background: #0D0F0E;
+}
+
+.tsi-seriesTypeSelection{
+    background: none !important;
+}

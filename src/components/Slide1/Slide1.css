@@ -1,0 +1,22 @@
+.s1title{
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.s1title h1{
+    color: white;
+}
+
+.s1title h2{
+    color: #ddd;
+}
+
+.s1title h3{
+    line-height: 2.4vw;
+}
+
+.slide1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
