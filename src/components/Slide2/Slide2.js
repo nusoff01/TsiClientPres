@@ -36,7 +36,7 @@ class Slide2 extends React.Component {
           }
           {this.props.slide >= 5 && 
           <div className='third'>
-          <h3>Um...check please</h3>
+          <h3>thank u, next</h3>
           <ul>
             <li>I also made a dope custom camper van (not covered here)</li>
           </ul>
