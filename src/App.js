@@ -8,9 +8,11 @@ import Slide5 from './components/Slide5/Slide5'
 import Slide6 from './components/Slide6/Slide6'
 import Slide7 from './components/Slide7/Slide7'
 import Slide8 from './components/Slide8/Slide8'
+import Slide25 from './components/Slide25/Slide25'
+import Slide75 from './components/Slide75/Slide75'
 
 class App extends React.Component {
-  MAX_SLIDES = 8;
+  MAX_SLIDES = 15;
   constructor(props) {
     super(props);
     this.state = {slide: (window.location.hash ? Number(window.location.hash.substring(1)) : 1), direction: 'right'};
@@ -53,18 +55,32 @@ class App extends React.Component {
       case 1:
         return <Slide1 className={`from${this.state.direction}`}></Slide1>;
       case 2:
-          return <Slide2 className={`from${this.state.direction}`}></Slide2>;
+          return <Slide2 slide={this.state.slide} className={`from${this.state.direction}`}></Slide2>;
       case 3:
-          return <Slide3 className={`from${this.state.direction}`}></Slide3>;
+        return <Slide2 slide={this.state.slide} className={`from${this.state.direction}`}></Slide2>;
       case 4:
-        return <Slide4 className={`from${this.state.direction}`}></Slide4>;    
+        return <Slide2 slide={this.state.slide} className={`from${this.state.direction}`}></Slide2>;
       case 5:
-        return <Slide5 className={`from${this.state.direction}`}></Slide5>;    
+        return <Slide2 slide={this.state.slide} className={`from${this.state.direction}`}></Slide2>;
       case 6:
-        return <Slide7 className={`from${this.state.direction}`}></Slide7>;    
+          return <Slide25 className={`from${this.state.direction}`}></Slide25>;
       case 7:
-        return <Slide6 className={`from${this.state.direction}`}></Slide6>;    
+          return <Slide3 className={`from${this.state.direction}`}></Slide3>;
       case 8:
+        return <Slide4 className={`from${this.state.direction}`}></Slide4>;    
+      case 9:
+        return <Slide4 slide={this.state.slide} className={`from${this.state.direction}`}></Slide4>;    
+      case 10:
+        return <Slide5 className={`from${this.state.direction}`}></Slide5>;    
+      case 11:
+        return <Slide5 slide={this.state.slide} className={`from${this.state.direction}`}></Slide5>;    
+      case 12:
+        return <Slide7 className={`from${this.state.direction}`}></Slide7>;    
+      case 13:
+        return <Slide6 className={`from${this.state.direction}`}></Slide6>;    
+      case 14:
+        return <Slide75 className={`from${this.state.direction}`}></Slide75>;    
+      case 15:
           return <Slide8 className={`from${this.state.direction}`}></Slide8>;    
       default:
         return '';

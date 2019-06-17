@@ -12,6 +12,14 @@ class Slide4 extends React.Component {
     pr.prettyPrint();
   }
 
+  shouldComponentUpdate() {
+    setTimeout(() => {
+      var pr = window.PR;
+      pr.prettyPrint();
+    });
+    return true;
+  }
+
   componentWillUnmount() {
   }
 
@@ -64,9 +72,17 @@ class Slide4 extends React.Component {
               <td>7925.16</td>
               <td>2600000</td>
             </tr>
+            <tr>
+              <td>Middle East</td>
+              <td>Iraq</td>
+              <td>1981</td>
+              <td>12913.52</td>
+              <td>1260000</td>
+            </tr>
           </tbody>
           </table>
         </div>
+        {this.props.slide === 9 &&
         <div className="s4right">
           <h1>...And how we'd render it</h1>
           <pre className="prettyprint lang-js">{`var lineChart = new LineChart();
@@ -83,6 +99,7 @@ lineChart.render({
 })`}
           </pre>
         </div>
+        }
       </div>
     );
   }

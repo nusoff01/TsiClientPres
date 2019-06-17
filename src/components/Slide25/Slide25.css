@@ -1,0 +1,12 @@
+.slide25{
+    font-size: 1.2vw;
+}
+
+.slide25 div{
+    text-align: center;
+    font-size: 2.7vw;
+    height: 60%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

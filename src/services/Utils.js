@@ -25,7 +25,7 @@ export default class Utils {
         var getValuesForRegion = region => {
             return data.filter(d => d.region === region)
                         .map(Utils.getValues)
-                        .slice(0,5)
+                        .slice(0,4)
                         .reduce((p,c) => {p[Object.keys(c)[0]] = c[Object.keys(c)[0]]; return p}, {})
         }
 

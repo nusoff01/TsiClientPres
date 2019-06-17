@@ -21,6 +21,7 @@ td, th{
     width: 50%;
     display: inline-block;
     float: right;
+    animation: fromLeft .5s ease;
 }
 
 .slide4 h1{

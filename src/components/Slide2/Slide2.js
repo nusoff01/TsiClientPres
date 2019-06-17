@@ -16,29 +16,38 @@ class Slide2 extends React.Component {
   render() {
     return (
       <div className={`slide ${this.props.className} slide2`}>
-        <h1>Hi I'm Matt, here's some things...</h1>
+        <h1>Hi, I'm Matt</h1>
         <div className='content'>
-          <h3>About me</h3>
-          <ul>
-            <li>Wrote hacky JavaScript the last 6 years</li>
-            <li>Tried incubating a bunch of different ideas at Microsoft</li>
-            <li>One idea (Time Series Insights) is sort of working!</li>
-          </ul>
-          <h3>What else?</h3>
+          {this.props.slide >= 3 && <div className='first'>
+            <h3>Why I'm here?</h3>
+            <ul>
+              <li>To discuss a JSON shape for visualization, and a couple cool results</li>
+            </ul>
+          </div>}
+          {this.props.slide >= 4 && 
+          <div className='second'>
+          <h3>Yeah...but why?</h3>
           <ul>
             <li>My team distributes a JS library of data visualization components</li>
             <li>It's called <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/tsiclient">tsiclient</a></li>
+            <li>The library consumes this specific shape</li>
           </ul>
-          <h3>Why I'm here?</h3>
+          </div>
+          }
+          {this.props.slide >= 5 && 
+          <div className='third'>
+          <h3>Um...check please</h3>
           <ul>
-            <li>To discuss a JSON shape for visualization, and a couple cool results</li>
+            <li>I also made a dope custom camper van (not covered here)</li>
           </ul>
+          </div>
+          }
         </div>
-        <div className="hs">
+        <div className={"hs " + (this.props.slide===2 ? 'lefter' : '')}>
           <img alt="" src="./headshot.PNG"></img>
           <div className="cap">Me</div>
         </div>
-        <div className="hs hs2">
+        <div className={"hs hs2 " + (this.props.slide===2 ? 'lefter' : '')}>
           <img alt="" src="./bitmoji.PNG"></img>
           <div className="cap">Also Me</div>
         </div>

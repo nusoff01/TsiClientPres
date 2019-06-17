@@ -16,11 +16,16 @@ class Slide8 extends React.Component {
   render() {
     return (
       <div className={`slide ${this.props.className}`}>
-        <h1>Other cool stuff...</h1>
-        <h2>I made a custom camper van</h2>
+        <h1>Oh yeah, this van...</h1>
         <div className="pics">
+          <div className="leftPix">
+        <img alt="" src="./van3.jpeg"></img>
+        <img alt="" src="./van4.jpeg"></img>
+        </div>
+        <div className="rightPix">
         <img alt="" src="./van.jpeg"></img>
         <img alt="" src="./van2.jpeg"></img>
+        </div>
         </div>
       </div>
     );

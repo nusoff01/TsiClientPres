@@ -47,7 +47,7 @@ class Slide7 extends React.Component {
               chart = new Utils.tsiClient.ux.LineChart(c1);          
               break;
           }
-          chart.render(Utils.data, {scaledToCurrentTime: true, tooltip: true, xAxisTimeFormat: () => 'YYYY', isTemporal: false, spMeasures: ['Income', 'LifeExpectancy', 'Population']});
+          chart.render(Utils.data, {legend: 'compact', scaledToCurrentTime: true, tooltip: true, xAxisTimeFormat: () => 'YYYY', isTemporal: false, spMeasures: ['Income', 'LifeExpectancy', 'Population']});
           this.renderCount++;
         }
         this.timeout = setTimeout(render, 1000);
@@ -65,7 +65,7 @@ class Slide7 extends React.Component {
     return (
       <div className={`slide ${this.props.className} slide7`}>
         <h1>Benefit #1: Universal Data Shape</h1>
-        <h3>Regardless of chart type, this shape works</h3>
+        <h2>Regardless of chart type, this shape works</h2>
         <pre className="prettyprint lang-js">lineChart.render(data); barChart.render(data); pieChart.render(data); scatterPlot.render(data);</pre>
         <div style={{opacity: 0}} id="chartCard1" className="chartCard">
           <div className="ccTitle">Average Income by Year, Country, Region</div>

@@ -32,7 +32,7 @@ class Slide3 extends React.Component {
   render() {
     return (
       <div className={`slide slide3 ${this.props.className}`}>
-        <h1>Here's a line chart...</h1>
+        <h1>Here's a line chart of that data for 12 countries...</h1>
         <div style={{opacity: 0}} id="chartCard1" className="chartCard">
           <div className="ccTitle">Average Income by Year, Country, Region</div>
           <div id="chart1" className="chart"></div>
