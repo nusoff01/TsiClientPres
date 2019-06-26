@@ -82,7 +82,7 @@ class Slide4 extends React.Component {
           </tbody>
           </table>
         </div>
-        {this.props.slide === 9 &&
+        {this.props.slide === 10 &&
         <div className="s4right">
           <h1>...And how we'd render it</h1>
           <pre className="prettyprint lang-js">{`var lineChart = new LineChart();

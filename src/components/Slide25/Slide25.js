@@ -17,7 +17,8 @@ class Slide25 extends React.Component {
     return (
       <div className={`slide ${this.props.className} slide25`}>
         <h1>Consider this data set...</h1>
-        <div>Average income, by year, by country, by geographic region</div>
+        <div class="dataSetEg">Average income, by year, by country, by geographic region</div>
+        {this.props.slide === 7 && <div class="forEg">Average income in Argentina in 1986 was $9026<br/>Argentina is in the Americas</div>}
       </div>
     );
   }

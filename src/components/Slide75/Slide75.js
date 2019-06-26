@@ -17,8 +17,8 @@ class Slide75 extends React.Component {
     return (
       <div className={`slide ${this.props.className} slide75`}>
         <h1>Today I Learned...</h1>
-        <div>CSV makes JavaScript nerds sad</div>
-        <div>Descriptively nested JSON makes JavaScript nerds happy!</div>
+        <div>CSV == 😿</div>
+        <div>JSON == 🧐😻</div>
       </div>
     );
   }

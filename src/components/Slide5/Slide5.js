@@ -61,7 +61,7 @@ class Slide5 extends React.Component {
 `}
         </pre>
         </div>
-        {this.props.slide === 11 &&
+        {this.props.slide === 12 &&
         <div className="s4right">
         <h1>...And how we'd render it</h1>
         <pre className="prettyprint lang-js">
