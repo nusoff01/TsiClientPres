@@ -1,81 +1,39 @@
-.slide2 .content{
-    padding-left: 80px;
-}
-
-.content ul li{
-    padding: 8px;
-}
-
-.slide2 h3{
-    padding-top: 20px;
-}
-
-.slide2{
-    font-size: 1.6vw;
-}
-
-a{
-    color: white !important;
-}
-
-.hs{
-    width: 15%;
-    position: absolute;
-    top: 160px;
-    left: 80%;
-    /* transition: transform .5s ease; */
-}
-
-.hs2{
-    top: 55%;
-}
-
-.lefter{
-    /* transform: translateX(-470%); */
-}
-
-.hs2 img{
-}
-
-.cap{
-    position: relative;
-    text-align: center;
-    margin-top: 12px;
-}
-
-.slide2 img{
-    border-radius: 10000px;
+.slide2 .s2Panels{
     width: 100%;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    height: 480px;
+    display: flex;
+    align-items: center;
 }
 
-@keyframes wave{
-    0%{
-        transform: rotate(-5deg)
-    }
-    50%{
-        transform: rotate(10deg)
-    }
-    100%{
-        transform: rotate(-5deg)
-    }
+.panel {
+    width: 400px;
+    background-color: black;
+    height:100%;
+    margin: 0px 8px;
 }
 
-@keyframes fadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.panelHeader {
+    /* border-bottom: 1px solid blue; */
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    padding-left: 8px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-.first, .second, .third{
-    animation: fadeIn .5s ease forwards;
-    opacity: 0;
+.panelHeader a{
+    color: inherit;
 }
 
-.second{
-    animation: fadeIn .5s ease forwards;
-    opacity: 0;
-} 
+.panelDescription {
+    padding: 16px;
+    font-size: 18px;
+    border-top: 1px solid grey;
+}
+
+.footer {
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+}

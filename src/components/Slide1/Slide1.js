@@ -19,9 +19,8 @@ class Slide1 extends React.Component {
     return (
       <div className={`slide ${this.props.className} slide1`}>
         <div className='s1title'>
-          <h1>A JSON Shape for Visualizing Time Series Data</h1>
-          <h2>A really short talk</h2>
-          <h3>by Matt Darsney</h3>
+          <h1>Creating a Javascript Charting Library</h1>
+          <h4>(AKA - what happens when Highcharts isn't good enough)</h4>
         </div>
       </div>
     );

@@ -16,41 +16,36 @@ class Slide2 extends React.Component {
   render() {
     return (
       <div className={`slide ${this.props.className} slide2`}>
-        <h1>Hi, I'm Matt</h1>
-        <div className='content'>
-          {this.props.slide >= 3 && <div className='first'>
-            <h3>Why I'm here?</h3>
-            <ul>
-              <li>To discuss a JSON shape for visualization, and a couple cool results</li>
-            </ul>
+        <h1>TsiClient in use</h1>
+
+        <div className="s2Panels">
+          {this.props.slide > 18 && <div className="panel panel1 fromRight">
+            <div className='panelHeader'><a href='https://tsiclientsample.azurewebsites.net/'>TsiClient Sample Page</a></div>
+            <div className='panelContent'>
+              <img height='300' width='400' src='tsiClientSample.png'/>
+              <div className='panelDescription'>The place we point when anyone wants to see how to see the charts in action! Self-contained examples that are easy to copy and build off of</div>
+            </div>
           </div>}
-          {this.props.slide >= 4 && 
-          <div className='second'>
-          <h3>Yeah...but why?</h3>
-          <ul>
-            <li>My team distributes a JS library of data visualization components</li>
-            <li>It's called <a target="_blank" rel="noopener noreferrer" href="https://github.com/microsoft/tsiclient">tsiclient</a></li>
-            <li>The library consumes this specific shape</li>
-          </ul>
-          </div>
-          }
-          {this.props.slide >= 5 && 
-          <div className='third'>
-          <h3>thank u, next</h3>
-          <ul>
-            <li>I also made a dope custom camper van (not covered here)</li>
-          </ul>
-          </div>
-          }
+          {this.props.slide > 19 && <div className="panel panel2 fromRight">
+            <div className='panelHeader'><a href='https://t6dev.cloudapp.net/preview'>TSI Explorer</a></div>
+            <div className='panelContent'>
+              <img height='300' width='400' src='T7.png'/>
+              <div className='panelDescription'>The original motivation for creating the library - our data historian product which uses a mashup of most of the charts to create an analytics tool</div>
+            </div>
+          </div>}
+          {this.props.slide > 20 && <div className="panel panel3 fromRight">
+            <div className='panelHeader'><a href='http://nusoff01.github.io/boston911/bostonScatter.html'>Boston 911 Call Data</a></div>
+            <div className='panelContent'>
+              <img height='300' width='400' src='boston911.png'/>
+              <div className='panelDescription'>Just a fun use case that demonstrates two way binding of charts :)</div>
+
+              <h4></h4>
+            </div>
+          </div>}
         </div>
-        <div className={"hs " + (this.props.slide===2 ? 'lefter' : '')}>
-          <img alt="" src="./headshot.PNG"></img>
-          <div className="cap">Me</div>
-        </div>
-        <div className={"hs hs2 " + (this.props.slide===2 ? 'lefter' : '')}>
-          <img alt="" src="./bitmoji.PNG"></img>
-          <div className="cap">Also Me</div>
-        </div>
+        {this.props.slide > 20 && <h2 className='footer'>
+            Takeaway - tailored for our product, but can drop into anything
+          </h2>}
       </div>
     );
   }

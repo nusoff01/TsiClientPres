@@ -12,6 +12,47 @@
     transition: opacity .4s ease;
 }
 
+.subHeader {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.slidingScale {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+    font-size: 32px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: inherit;
+    color: inherit;
+    margin-top: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color:rgba(0,0,0,.6);
+}
+.boring {
+    flex-grow:1;
+}
+
+.explorationOptions {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.explorationOption {
+    flex: 1 1 0px;
+}
+
+
 .ccTitle{
     height: 40px;
     border-bottom: 1px solid #333;

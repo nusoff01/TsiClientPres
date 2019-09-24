@@ -1,6 +1,6 @@
 import React from 'react';
 import './Slide7.css';
-import Utils from '../../services/Utils';
+import Utils from '../../services/Utils'; 
 
 class Slide7 extends React.Component {
   now = new Date();
