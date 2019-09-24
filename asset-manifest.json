@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lightningtalk/static/css/main.6cdb7aaf.chunk.css",
+    "main.js": "/lightningtalk/static/js/main.534180a3.chunk.js",
+    "main.js.map": "/lightningtalk/static/js/main.534180a3.chunk.js.map",
+    "runtime~main.js": "/lightningtalk/static/js/runtime~main.643e3a84.js",
+    "runtime~main.js.map": "/lightningtalk/static/js/runtime~main.643e3a84.js.map",
+    "static/js/2.3fd2e0ce.chunk.js": "/lightningtalk/static/js/2.3fd2e0ce.chunk.js",
+    "static/js/2.3fd2e0ce.chunk.js.map": "/lightningtalk/static/js/2.3fd2e0ce.chunk.js.map",
+    "index.html": "/lightningtalk/index.html",
+    "precache-manifest.1b4a70f39f47c336323f83767efbe321.js": "/lightningtalk/precache-manifest.1b4a70f39f47c336323f83767efbe321.js",
+    "service-worker.js": "/lightningtalk/service-worker.js",
+    "static/css/main.6cdb7aaf.chunk.css.map": "/lightningtalk/static/css/main.6cdb7aaf.chunk.css.map"
+  }
+}
