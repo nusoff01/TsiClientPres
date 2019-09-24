@@ -24,7 +24,7 @@ class Slide8 extends React.Component {
             
             <div className='picturePanels'>
               <div className=' picturePanel'>
-                <h3>NPM adoption</h3>
+                <h3>npm adoption</h3>
                 <img src='npm.png' height='200'/>
               </div>
               <div className=' picturePanel'>
@@ -38,7 +38,7 @@ class Slide8 extends React.Component {
           <h2 className='sectionHeader'>Accessibility: Expanding the base of our end users</h2>
           <div className='contentSection'>
             <li>Using aria labels and correct tab order ensures visually impaired and limited mobility users are able to use the charts</li>
-            <li>Using overridable keys for strings means that our charts can be adapted to different languages</li>
+            <li>Using <a href='https://github.com/microsoft/tsiclient/blob/master/src/UXClient/Models/Strings.ts'>overridable keys</a> for strings means that our charts can be adapted to different languages</li>
             <li>Also, we built a cool tool that converts a chart to a screen readable grid, more about that on the next slide...</li>
           </div>
         </div>}

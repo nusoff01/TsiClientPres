@@ -21,3 +21,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.s1Footer {
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+a {
+    color: lightblue;
+}

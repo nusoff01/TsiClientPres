@@ -36,7 +36,7 @@ class Slide3 extends React.Component {
         <h1>TsiClient</h1>
         <div className='subHeader'>Origin story tldr: Needed charts for analytics tool, instead of just building charts, built a highly-extendable charting library </div>
         <div className='subHeader'>Built on d3.js, completely self contained (no dependencies) </div>
-        {this.props.slide > 2 && <h2>Choose your own adventure - pick one of three option to learn more about how we built TsiClient or how it's put to use today</h2>}
+        {this.props.slide > 2 && <h2 className='adventureText'>Choose your own adventure - pick one of three option to learn more about how we built TsiClient or how it's put to use today</h2>}
         {this.props.slide > 3 && <div className='slidingScale'>
           <div className='boring'>&#8592; Technical 🤓</div>
           <div className='cool'>🌄 Pretty charts &#8594;</div>
@@ -45,12 +45,12 @@ class Slide3 extends React.Component {
           <div className='explorationOption'>
             <h2>The shape of the data</h2>
             <div>why it's important to pick the right one, and how shape influences usage and functionality</div>
-            <button onClick={() => this.props.jumpToSlide(7)}>Go!</button>
+            <button onClick={() => this.props.jumpToSlide(5)}>Go!</button>
           </div>
           <div className='explorationOption'>
             <h2>Accessibility and availability</h2>
             <div>building with Open Source/public npm package in mind, as well as in a manner that is inclusive to all our users</div>
-            <button onClick={() => this.props.jumpToSlide(7)}>Go!</button>
+            <button onClick={() => this.props.jumpToSlide(14)}>Go!</button>
           </div>
           <div className='explorationOption'>
             <h2>Usage out in the world</h2>
